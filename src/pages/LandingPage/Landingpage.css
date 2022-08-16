@@ -1,0 +1,42 @@
+.banner{
+    display: flex;
+    width: 100%;
+    grid-template-columns: auto auto;
+    height: calc(100vh - 70px);
+}
+
+.banner-left{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: flex-start;
+  padding-left:30px;
+
+}
+.banner-right{
+    width:50%;
+    background-image: url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.banner-button{
+    margin-top: 10px;
+    background-color:rgb(7, 172, 89);
+    color: white;
+    width:120px;
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    cursor: pointer;
+}
+.banner-button:hover{
+    background-color: rgb(0, 153, 51);
+}

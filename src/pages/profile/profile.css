@@ -1,0 +1,96 @@
+.profile {
+  display: flex;
+  height:calc(100vh - 70px);
+  width:100vw;
+  position: fixed;
+}
+.profile-left {
+  display: flex;
+  flex: 0.4;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.profile-upload{
+    width:40%;
+    margin-top: 40px;
+}
+.profile-upload>button{
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #1c3f45;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    
+}
+ .profile-left > img{
+    height:70%;
+    width: 70%;
+    border-radius: 9999px;
+    object-fit: fill;
+} 
+
+.profile-right {
+  display: flex;
+  flex: 0.6;
+  height: 100%;
+  position: relative;
+  padding-left: 40px;
+}
+
+.profile-form {
+  height: 85%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.profile-form > div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.profile-form > div > label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.profile-form-input{
+  border:1px solid gray;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+}
+.profile-form-input:focus{
+  outline: none !important;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.form-button{
+    margin-top: 40px;
+    width: 100%;
+    position: absolute;
+    left:40px;
+    bottom: 20px;
+    border: none;
+    align-items: flex-start;
+} 
+.form-button>button{
+    height: 40px;
+    color: white;
+    width: 30%;
+    background-color: #3333ff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+
+}
