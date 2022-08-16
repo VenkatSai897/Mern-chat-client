@@ -14,7 +14,7 @@ export default function Topbar() {
   const handleLogout = () => {
     let userId = user._id;
     dispatch({ type: "LOGOUT" });
-    io("https://mern-chat-1.herokuapp.com").emit("deleteUser",userId);
+    io(process.env.BACKEND_URL).emit("deleteUser",userId);
     localStorage.clear();
     history.push('/');
   };
